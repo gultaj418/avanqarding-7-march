@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="AVANQARD UPS sizin üçün ən doğru olan seçimdir.">
+    <meta name="keywords" content="Avanqard UPS, UPS sistemlər, avadanlıq, hesabla, kva, servis">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/calculator.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <title>Document</title>
+</head>
+<body>
+{{>navbar}}
+{{>search}}
+
+<section class="calculatorHeading">
+    <div class="calculatorPageLinks">
+        <a class="ppp" href="/">Ana Səhifə</a> /
+        <a class="ppp ppp-second" href="/calculator">Güc hesablama kalkulyatoru</a>
+    </div>
+
+    <div class="calculatorHeadingContent">
+        <h1>
+            Sizə lazım olan gücü ağaşıdakı cihazların <br />
+            sayını daxil edərək hesablayın
+        </h1>
+        <p>
+            Aşağıdakı cihazların saylarını daxil edin və kalkulyator sizə lazım
+            olan gücdə avadanlıqlarımızın səhifəsini təqdim edəcək. Və ya
+            aşağıdakı düyməyə klikləyin, mühəndislərimiz sizinlə əlaqə saxlasın.
+        </p>
+        <a id="calculatorBtn" href="">Yardım alın</a>
+    </div>
+</section>
+
+<section class="upsPageCalculator">
+    <div class="upsPageCalculatorHeading">
+        <h2>UPS gücü hesablama</h2>
+        <p>
+            Aşağıdakı cihazların sayını daxil edin və hesabla düyməsinə klikləyin,
+            hər bir cihaza lazım olan güc qeyd edilib
+        </p>
+    </div>
+    <div class="alert-box">
+        <span>Boş qalmış xanaları doldurun!</span>
+    </div>
+    <div class="upsCalculatorFormsImage">
+
+        <div class="calculatorForm1">
+            <label for="num1">Standart PC (200 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="num1"
+                    class="calcInputs"
+                    id="num1" min="5" max="50"
+                    placeholder="Sayı daxil edin"
+            /><br />
+            <label for="num2">Multimedia PC (250 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num2"
+            /><br />
+            <label for="num3">Terminal PC (150 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num3"
+            /><br />
+            <label for="num4">14" Monitor (75 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num4"
+            /><br />
+            <label for="num5">17" Monitor (100 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num5"
+            /><br />
+            <label for="num6">21" Monitor (150 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num6"
+            /><br />
+            <label for="num7">Server (500 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num7"
+            /><br />
+            <label for="num8">Internet Server (750 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num8"
+            /><br />
+            <label for="num9">Inkjet Yazıcı (100 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num9"
+            /><br />
+            <label for="num10">Dot-Matrix Yazıcı (150 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num10"
+            /><br />
+        </div>
+        <div class="calculorForm2">
+            <label for="num11">Deskjet Yazıcı (100 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num11"
+            /><br />
+            <label for="num12">Lazer Yazıcı (500 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num12"
+            /><br />
+            <label for="num13"> Network Lazer Yazıcı (750 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num13"
+            /><br />
+            <label for="num14">Yazar Kasa (100 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num14"
+            /><br />
+            <label for="num15">Hub (100 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num15"
+            /><br />
+            <label for="num16">Router (200 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num16"
+            /><br />
+            <label for="num17">100 Hatlı PBX Santral (300 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num17"
+            /><br />
+            <label for="num18">Tarayıcı (100 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num18"
+            /><br />
+            <label for="num19">Fax (100 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="fname"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num19"
+            /><br />
+            <label for="num20">Modem (50 VA)</label><br />
+            <input
+                    type="number"
+                    maxlength="6"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    name="num20"
+                    class="calcInputs"
+                    placeholder="Sayı daxil edin"
+                    id="num20"
+            /><br />
+        </div>
+        <div class="upsCalculatorPageImage">
+            <img src="assets/img/calculator-art.png" alt="avanqardups-hesabla" />
+        </div>
+    </div>
+    <div class="submitButton">
+        <button
+                name="calculateButton"
+                id="calcBtn"
+                style="cursor: pointer"
+                type="submit"
+        >
+            Hesabla
+        </button>
+        <div class="calc-result">Nəticə</div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- <section class="calculatorUp">
+  <div class="calculatorPageIpIcon">
+    <a href="#"><img src="assets/img/arrow-up.svg" alt="" /></a>
+  </div>
+</section> -->
+
+<section class="up">
+    <div class="upIcon">
+        <a href="#"><img src="assets/img/arrow-up.svg" alt="arrow" /></a>
+    </div>
+</section>
+
+{{>footer}}
+
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/pages.js"></script>
+<script src="gsapJs/calculator-gsap.js"></script>
+</body>
+</html>

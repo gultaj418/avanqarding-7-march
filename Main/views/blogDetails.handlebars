@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="AVANQARD UPS sizin üçün ən doğru olan seçimdir.">
+    <meta name="keywords" content="Avanqard UPS, UPS sistemlər, avadanlıq, bloq">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge https://avanqardups.az" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <base href="https://avanqardups.az">
+    <link rel="stylesheet" href="css/style.css"  />
+    <link rel="stylesheet" href="css/blogdetails.css" />
+    <link rel="stylesheet" href="css/blogSingle.css">
+    <link rel="stylesheet" href="css/contact.css"/>
+    <title>Blog</title>
+</head>
+<body>
+{{>navbar}}
+
+{{>search}}
+
+<main class="main">
+    <section class="bread-crumbs-title">
+        <div class="bread-crumbs">
+            <a class="blog-ppp" href="/">Ana Səhifə/</a>  <a class="ppp-second" href="/blog">Blog</a>
+
+        </div>
+    </section>
+    {{#each blog}}
+        <section class="bread-crumbs-title">
+            <p class="title">{{this.Title}}</p>
+            <span class="date">
+                {{this.BlogCreatedAt}}
+            </span>
+        </section>
+
+        {{#if this.ImageUrl}}
+            <section class="image-wrapper">
+                <img src={{this.ImageUrl}} alt="avanqardups-blog" >
+            </section>
+        {{/if}}
+        <article>
+            {{#each this.Description}}
+                {{this}}
+                <div class="br"></div>
+            {{/each}}
+            {{#if this.Subtitle_2}}
+                <p class="description-head">{{this.Subtitle_2}}</p>
+                <div class="br"></div>
+            {{/if}}
+
+            {{#if this.ExtraImageUrl}}
+                <section class="image-wrapper">
+                    <img src={{this.ExtraImageUrl}} alt="avnqardups-blog">
+                </section>
+            {{/if}}
+
+            {{#if this.Description_2}}
+                {{#each this.Description_2}}
+                    {{this}}
+                {{/each}}
+            {{/if}}
+
+            {{#if this.Subtitle_3}}
+                <p class="description-head">{{this.Subtitle_3}}</p>
+                <div class="br"></div>
+            {{/if}}
+            {{# if this.Description_3}}
+                {{#each this.Description_3}}
+                    {{this}}
+                    <div class="br"></div>
+                {{/each}}
+            {{/if}}
+        </article>
+
+
+    {{/each}}
+    </article>
+    <p class="more-info">
+        Daha çox məlumat almaq və ya yeni cihaz almaq istəyirsinizsə, əlaqə saxlayın və sizin üçün özəl təkliflərimizdən yararlanın
+    </p>
+    <a class="moreinfo-link" href="/contact">Əlaqə saxla</a>
+
+</main>
+<section class="up">
+    <div class="upIcon">
+        <a href="#"><img src="assets/img/arrow-up.svg" alt="arrow" /></a>
+    </div>
+</section>
+
+{{>footer}}
+
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script src="gsapJs/blog-gsap.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,248 @@
+header {
+  background: #fafafa;
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+#headerContainer {
+  background-color: #eceef2;
+}
+
+nav ul li a {
+  color: var(--main-black);
+}
+
+.blogPageLinks {
+  color: var(--main-black);
+  padding: 2rem 5%;
+  width: 90%;
+}
+
+.ppp-second {
+  color: #6d6e69 !important;
+}
+
+.blogPageLinks a {
+  /* font-family: "Open Sans", sans-serif; */
+  color: var(--main-black);
+  font-size: var(--font-18px);
+}
+
+.blogDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+}
+
+.blogPageHeading h1 {
+  color: var(--main-black);
+  /* font-family: "Montserrat", sans-serif; */
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.blogDetails {
+  border-bottom: 1px solid var(--main-black);
+  margin-bottom: 4rem;
+}
+
+.blogDetails h2 {
+  color: var(--main-black);
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: bold;
+  font-size: var(--font-18px);
+}
+
+.blogDetails p {
+  color: #444444;
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: var(--font-16px);
+  letter-spacing: 0.7px;
+}
+
+.blogBtn {
+  /* font-family: "Open Sans", sans-serif; */
+  font-weight: bold;
+  font-size: var(--font-16px);
+  color: var(--main-black);
+  transition: all 0.2s;
+}
+
+.blogBtn:hover {
+  transform: translateX(7px) scale(1.1);
+}
+
+.blogBtn img {
+  width: 12%;
+  margin-left: 5px;
+}
+
+.blogImage img {
+  width: 70%;
+}
+
+.blogImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  width: 800px;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.blogBtnAndTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogPage {
+  margin-bottom: 6rem;
+  width: 90%;
+  padding: 0 5%;
+}
+
+.blogTime {
+  margin-top: 5px;
+  font-size: var(--font-16px);
+  color: #444444;
+  /* font-family: "Open Sans", sans-serif; */
+}
+
+.blogContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.blogContactPageButton a {
+  display: inline-block;
+  padding: 0.7rem;
+  text-align: center;
+  background-color: var(--main-black);
+  border-radius: 3px;
+  -webkit-box-shadow: 0.5px 0.5px gray;
+  box-shadow: 0.5px 0.5px gray;
+  width: 140px;
+  color: #fff;
+  font-size: var(--font-16px);
+  /* font-family: "Open Sans", sans-serif; */
+  letter-spacing: 1px;
+  background-color: var(--main-black);
+  transition: all 0.2s;
+}
+
+.blogContactPageButton a:hover {
+  transform: scale(1.1);
+}
+
+.blogContactPageButton {
+  margin-top: 15rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.blogPageIpIcon {
+  background-color: var(--main-black);
+  border-radius: 6px;
+  border: 1px solid var(--main-black);
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.blogUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+}
+
+.blogPageIpIcon img {
+  width: 40px;
+  height: 50px;
+}
+.footerbg {
+  align-items: center;
+}
+.footerbg p {
+  color: #fafafa;
+}
+
+@media screen and (max-width: 940px) {
+  .blogPage h1 {
+    font-size: 29px;
+  }
+  .blogImage img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .blogPage h1 {
+    font-size: 24px;
+  }
+  .blogImage img {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blogDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .blogImage {
+    margin-bottom: 1rem;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .blogImage {
+    width: 250px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    background-color: var(--main-black);
+  }
+  .open {
+    background-color: var(--main-black);
+  }
+}
+

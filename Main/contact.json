@@ -1,0 +1,34 @@
+{
+  "error": {
+    "name": {
+      "value": "",
+      "msg": "Zəhmət olmazsa adınızı daxil edin !",
+      "param": "name",
+      "location": "body"
+    },
+    "email": {
+      "value": "",
+      "msg": "Zəhmət olmazsa elektron ünvanınızı daxil edin !",
+      "param": "email",
+      "location": "body"
+    },
+    "phone": {
+      "value": "",
+      "msg": "Lütfən düzgün əlaqə nömrənizi daxil edin !",
+      "param": "phone",
+      "location": "body"
+    },
+    "companyName": {
+      "value": "",
+      "msg": "Zəhmət olmazsa şirkət adını daxil edin !",
+      "param": "companyName",
+      "location": "body"
+    },
+    "message": {
+      "value": "",
+      "msg": "Zəhmət olmazsa mətninizi daxil edin !",
+      "param": "message",
+      "location": "body"
+    }
+  }
+}

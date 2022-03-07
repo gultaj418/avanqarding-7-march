@@ -1,0 +1,474 @@
+header {
+  background: #fafafa;
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+#headerContainer {
+  background-color: #eceef2;
+}
+
+nav ul li a {
+  color: var(--main-black);
+}
+.ppp-second {
+  color: #6d6e69 !important;
+  font-size: var(--font-18px);
+}
+.calculatorPageLinks {
+  margin: 2rem 0;
+  color: var(--main-black);
+}
+
+.calculatorPageLinks a {
+  /* font-family: "Open Sans"; */
+  color: var(--main-black);
+}
+
+.calculatorHeading {
+  width: 90%;
+  padding: 0 5%;
+  background-color: #fafafa;
+  margin-bottom: 6rem;
+}
+
+.calculatorHeadingContent h1 {
+  color: var(--main-black);
+  font-size: 30px;
+  /* font-family: "Montserrat"; */
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.calculatorHeadingContent p {
+  color: var(--main-black);
+  /* font-family: "Open Sans"; */
+  line-height: 23px;
+  width: 35%;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+
+
+#calculatorBtn {
+  display: inline-block;
+  border: 1px solid var(--main-black);
+  padding: 0.7rem;
+  text-align: center;
+  background-color: var(--main-black);
+  border-radius: 2px;
+  color: #fafafa;
+  width: 160px;
+  font-size: 16px;
+  /* font-family: "Open Sans"; */
+}
+
+.upsCalculatorFormsImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.upsPageCalculator {
+  width: 90%;
+  padding: 0 5%;
+}
+
+.upsPageCalculatorHeading h2 {
+  font-size: 22px;
+  /* font-family: "Montserrat"; */
+  font-weight: bold;
+  color: var(--main-black);
+}
+
+.upsPageCalculatorHeading p {
+  color: #444444;
+  /* font-family: "Open Sans"; */
+  line-height: 23px;
+  font-size: var(--font-18px);
+  /* text-align: center; */
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.alert-box {
+  width: 220px;
+  padding: 20px;
+  background-color: rgb(204, 51, 0);
+  /* background-color: var(--main-black); */
+  box-shadow: 0px 0px 10px rgb(204, 51, 0);
+  border-radius: 20px 20px 20px 0px;
+  color: rgb(255, 206, 181);
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  justify-content: center;
+  position: relative;
+  left: 530px;
+  bottom: 150px;
+  transition: all 400ms ease;
+  transition-delay: 0.5s;
+}
+.alert-box.active {
+  bottom: 130px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.calculatorForm1 input {
+  width: 250px;
+  background-color: #fafafa;
+  padding: 0.5rem 0.2rem;
+  height: 18px;
+  border: 1px solid #707070;
+  color: #9a9a9a;
+  margin-bottom: 0.8rem;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.calculatorForm1 label {
+  color: #444444;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.calculorForm2 {
+  margin-right: 6rem;
+}
+
+.calculorForm2 input {
+  width: 250px;
+  background-color: #fafafa;
+  height: 18px;
+  border: 1px solid #707070;
+  padding: 0.5rem 0.2rem;
+  color: #9a9a9a;
+  margin-bottom: 0.8rem;
+  font-size: 16px;
+  border-radius: 2px;
+}
+input.alert-message::placeholder {
+  font-style: italic;
+  color: rgb(204, 51, 0);
+}
+
+.calculorForm2 label {
+  color: #444444;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.upsCalculatorPageImage {
+  text-align: left;
+  width: 20%;
+}
+
+.upsCalculatorPageImage img {
+  width: 92%;
+  position: relative;
+  bottom: 30%;
+  left: 35%;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: space-between;
+  width: 54%;
+}
+.submitButton.edited {
+  margin-bottom: 30px;
+}
+
+.submitButton button {
+  width: 172px !important;
+  font-size: var(--font-16px);
+  display: block;
+  padding: 0.7rem;
+  text-align: center;
+  background-color: var(--main-black);
+  border: none;
+  border-radius: 2px;
+  color: #fafafa;
+  /* width: 53%; */
+
+  /* font-family: "Open Sans"; */
+  opacity: 1;
+  margin-bottom: 3rem;
+  transition: all 0.2s;
+
+}
+
+.submitButton button:hover{
+  transform:  scale(1.1);
+}
+
+
+.calculateButton:hover{
+
+  }
+
+.calc-result {
+
+  color: #fff;
+  width: 250px;
+  height: 70px;
+  display: none;
+  text-align: center;
+
+  /* margin-left: 500px; */
+}
+
+.calc-result.active {
+  background-color: var(--main-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.calc-result.danger{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.calculatorPageIpIcon {
+  background-color: var(--main-black);
+  border-radius: 6px;
+  border: 1px solid var(--main-black);
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.calculatorUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+}
+
+.calculatorPageIpIcon img {
+  width: 40px;
+  height: 50px;
+}
+
+
+@media only screen and (max-width:1300px){
+  .submitButton{
+    width: 59%;
+  }
+}
+
+@media only screen and (max-width:1100px){
+  .submitButton{
+    width:63% ;
+  }
+}
+
+@media screen and (max-width:900px){
+  .submitButton{
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .alert-box {
+    display: none;
+  }
+  .calculatorHeadingContent h1 {
+    font-size: 26px;
+  }
+  .calculatorHeadingContent p {
+    width: 50%;
+  }
+
+  .calculatorForm1 input {
+    width: 200px;
+  }
+
+  .calculorForm2 input {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .calc-result.active {
+    margin-left: 20px;
+  }
+  .submitButton{
+    width: 68%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .calculorForm2 input {
+    margin-left: 30px;
+  }
+
+  .calculorForm2 label {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .calculatorHeadingContent h1 {
+    font-size: 23px;
+  }
+  .calculatorHeadingContent p {
+    width: 100%;
+  }
+  .line {
+    background-color: var(--main-black);
+  }
+  .upsCalculatorPageImage {
+    display: none;
+  }
+  .upsCalculatorFormsImage{
+    justify-content: space-around;
+  }
+  .calculorForm2{
+    margin-right: 0;
+  }
+  .submitButton{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .submitButton button{
+    margin-top: 1rem;
+  }
+  .calc-result.active{
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 670px) {
+  /* .calculatorHeadingContent h1 {
+    font-size: 18px;
+  } */
+  .calculatorHeadingContent p {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:600px){
+  .submitButton{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submitButton button{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .calc-result{
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .upsPageCalculatorHeading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .upsPageCalculator {
+    margin-left: 0rem;
+  }
+  .upsCalculatorFormsImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .calculorForm2 {
+    margin-right: 2rem;
+  }
+  .calculorForm2 input {
+    width: 420px;
+  }
+
+  .calculatorForm1 input {
+    width: 420px;
+  }
+
+  .upsPageCalculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .upsPageCalculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .calculorForm2 input {
+    width: 320px;
+  }
+
+  .calculatorForm1 input {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .submitButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .calc-result.active {
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .calculorForm2 input {
+    width: 220px;
+  }
+
+  .calculatorForm1 input {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 340px) {
+}
+
+

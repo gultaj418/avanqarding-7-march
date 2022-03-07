@@ -1,0 +1,376 @@
+header {
+  background: none;
+}
+
+nav ul li a,
+.mobile-ul li a {
+  color: var(--main-black);
+}
+
+.heavyBackground {
+  background-color: var(--body-color);
+
+  margin-top: 0;
+  /* margin-top: -1px; */
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  -webkit-box-shadow: var(--nav-box-shadow);
+  box-shadow: var(--nav-box-shadow);
+}
+
+.mobileHeavyBackground {
+  background-color: var(--body-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: var(--nav-box-shadow);
+  box-shadow: var(--nav-box-shadow);
+}
+
+header {
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#headerContainer {
+  background-color: #eceef2;
+}
+
+nav ul li a {
+  color: var(--main-black);
+}
+
+nav ul li a:hover,
+.mobile-ul li a:hover {
+  color: var(--main-black);
+  border-bottom: 1px solid var(--main-black);
+}
+
+.aboutPageLinks {
+  /* margin: 0 4rem; */
+  color: #eee;
+ padding: 2rem 5%;
+ width: 90%;
+}
+
+.aboutPageLinks a {
+  /* font-family: "Open Sans"; */
+  color: #eee;
+}
+
+.aboutCompany {
+  background-image: url("../assets/img/about-bg-black.webp");
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  padding-bottom: 0.5rem;
+}
+
+.aboutCompanyHeading {
+  width: 50%;
+}
+
+.aboutCompanyHeading h1 {
+  color: #fafafa;
+  font-size: var(--font-26px);
+  /* font-family: "Monserrat"; */
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.aboutCompany p {
+  width: 75%;
+  color: #fafafa;
+  font-size: var(--font-18px);
+  /* font-family: "Open Sans"; */
+  margin-bottom: 70px;
+  margin-top: -10px;
+  line-height: 25px;
+}
+
+.aboutCompanyHeading {
+padding: 0 5%;
+  margin-bottom: 2rem;
+}
+
+.aboutCompanyButton {
+  padding: 0 5%;
+  width: 90%;
+  margin-bottom: 5rem;
+}
+
+.ppp-second {
+  color: #6d6e69 !important;
+  font-weight: bold;
+}
+
+.btn {
+  /* width: 12%; */
+  width: 150px !important;
+}
+
+#serv-btnSecond{
+  margin-left: 2rem;
+}
+
+.aboutCompanyContent {
+  padding: 2rem 5%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.aboutCompanyParagraf {
+  width: 45%;
+  margin-top: 2rem;
+}
+
+.aboutCompanyParagraf h2 {
+  color: var(--main-black);
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: bold;
+  font-size: var(--font-22px);
+  margin-top: 2rem;
+}
+
+.aboutCompanyParagraf p {
+  color: #444444;
+
+  /* font-family: "Open Sans", sans-serif; */
+  line-height: 20px;
+  font-size: var(--font-18px);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  line-height: 25px;
+}
+
+.aboutCompanyImage {
+  margin-left: 11%;
+  margin-top: 10%;
+}
+.aboutCompanyImage img {
+  width: 70%;
+}
+
+.aboutCompanyImage p {
+  font-weight: bold;
+  /* font-family: "Open Sans", sans-serif; */
+  color: #5e5e5e;
+}
+
+.rayonlar {
+  width: 60%;
+  position: relative;
+  left: 40%;
+}
+
+.companies {
+  width: 80%;
+  position: relative;
+  left: 5%;
+}
+
+.tecrube {
+  width: 60%;
+  position: relative;
+  left: 30%;
+}
+
+.aboutPageIpIcon {
+  background-color: var(--main-black);
+  border-radius: 6px;
+  border: 1px solid var(--main-black);
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.aboutUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+}
+
+.aboutPageIpIcon img {
+  width: 40px;
+  height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1100px){
+  .aboutCompanyHeading{
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .aboutCompany p {
+    width: 100%;
+  }
+  .aboutCompanyParagraf{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 990px) {
+
+  .aboutCompanyImage img {
+    width: 60%;
+  }
+}
+@media screen and (max-width:780px){
+  .aboutCompanyParagraf{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    background-color: var(--main-black);
+  }
+  .line:before {
+    background-color: var(--main-black);
+  }
+  .line:after {
+    background-color: var(--main-black);
+  }
+  .open {
+    background-color: var(--body-color);
+  }
+
+  
+  .aboutCompanyHeading h1 {
+    font-size: var(--font-26px);
+  }
+  .aboutCompany p {
+    width: 100%;
+    font-size: var(--font-16px);
+    letter-spacing: 0.4px;
+  }
+  
+  .btn {
+    width: 20%;
+  }
+  
+  
+  .aboutCompanyParagraf h2 {
+    font-size: var(--font-24px);
+  }
+  .aboutCompanyParagraf p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: var(--font-18px);
+  }
+  .tecrube {
+    margin-top: 8rem;
+  }
+  .companies {
+    margin-top: 5rem;
+  }
+  .line {
+    background-color: var(--main-black);
+  }
+  .open {
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 680px) {
+  .aboutCompanyParagraf h2 {
+    margin-top: 1rem;
+  }
+  .aboutCompanyParagraf{
+    width: 100%;
+  }
+  .aboutCompanyImage{
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .aboutCompanyParagraf {
+    width: 100%;
+  }
+  .aboutCompanyImage {
+    margin-top: 3rem;
+  }
+  .aboutCompanyImage p {
+    font-size: var(--font-16px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .aboutPageLinks {
+    margin: 2rem 0rem;
+    margin-top: 0;
+  }
+  .aboutCompanyImage {
+    display: none;
+  }
+  
+  
+  .btn {
+    width: 38%;
+  }
+  
+ 
+  .line {
+    background-color: var(--main-black);
+  }
+}
+
+@media only screen and (max-width:400px){
+  .aboutCompanyButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #serv-btnSecond{
+    margin-top: 1rem;
+    margin-left: 0;
+  
+  }
+}
+
+
+
+/* @media screen and (max-width: 1100px) {
+  .aboutCompanyImage {
+    margin-left: 100px;
+  }
+} */
+
+

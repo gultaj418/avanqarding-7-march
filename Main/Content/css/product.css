@@ -1,0 +1,238 @@
+header {
+  background: #fafafa;
+  padding: 0;
+}
+
+nav ul li a,
+.mobile-ul li a {
+  color: var(--main-black);
+  /* font-size: 20px; */
+}
+
+.heavyBackground {
+  background-color: var(--body-color);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  -webkit-box-shadow: var(--nav-box-shadow);
+  box-shadow: var(--nav-box-shadow);
+}
+
+.mobileHeavyBackground {
+  background-color: var(--body-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: var(--nav-box-shadow);
+  box-shadow: var(--nav-box-shadow);
+}
+
+nav ul li a:hover,
+.mobile-ul li a:hover {
+  color: var(--main-black);
+  border-bottom: 1px solid var(--main-black);
+}
+
+.productPageLinks {
+  margin-bottom: 5rem;
+  /* margin-top: -2rem; */
+  font-size: var(--font-16px);
+}
+.ppp-second {
+  color: #6d6e69 !important;
+}
+
+/* .ppp:hover {
+  border-bottom: 1px solid #9ca1a3 !important ;
+} */
+
+.productPageLinks a {
+  /* font-family: "Open Sans"; */
+  color: var(--main-black);
+  font-size: var(--font-16px);
+}
+
+.productPage {
+  width: 90%;
+  padding: 0 5%;
+  margin-top: 5%;
+}
+
+#productRightArrow {
+  width: 14px;
+  left: 0;
+}
+
+.productPageHeading h1 {
+  text-align: center;
+  color: var(--main-black);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: var(--font-24px);
+  margin-top: -50px;
+}
+
+#withoutH3 {
+  height: 60px;
+}
+
+.ProductDownloadButton {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.dwnld-btn {
+  padding: 0.9rem;
+  background-color: var(--main-black);
+  color: #fafafa;
+  font-size: var(--font-16px);
+  border-radius: 4px;
+  border: none;
+  transition: all 0.2s;
+}
+
+.dwnld-btn:hover {
+  transform: scale(1.1);
+}
+section a {
+  border: none;
+}
+
+#helpCalculatorButton {
+  border: none;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1.5px solid var(--lightblue);
+  color: var(--white-text);
+  background: none;
+  font-size: var(--font-16px);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.productPageIpIcon {
+  background-color: var(--main-black);
+  border-radius: 6px;
+  border: 1px solid var(--main-black);
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.productUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+}
+
+.productPageIpIcon img {
+  width: 40px;
+  height: 50px;
+}
+
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid var(--main-black);
+  position: absolute;
+  /*display: none;*/
+  top: -20%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+.loader.active {
+  display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .loader {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .line {
+    background-color: var(--main-black);
+  }
+  .line:before {
+    background-color: var(--main-black);
+  }
+  .line:after {
+    background-color: var(--main-black);
+  }
+  .open {
+    background-color: var(--body-color);
+  }
+  .loader {
+    width: 40px;
+    height: 40px;
+    top: -8%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .productPageHeading h1 {
+    font-size: var(--font-24px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .productPageHeading h1 {
+    margin-top: var(--font-24px);
+  }
+}
+@media screen and (max-width: 380px) {
+  .btnSecond.productBtnSecond {
+    display: inline-block;
+    margin-top: 24px;
+    margin-left: -15px;
+  }
+  .loader {
+    width: 35px;
+    height: 35px;
+    top: -2%;
+    left: 40%;
+  }
+}

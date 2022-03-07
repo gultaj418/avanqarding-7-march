@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="AVANQARD UPS sizin üçün ən doğru olan seçimdir.">
+    <meta name="keywords" content="Avanqard UPS, UPS sistemlər avadanlıqlar, servis">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge 'self' https://avaqardups.az" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+{{>navbar}}
+<hr class="service-hr"/>
+{{>search}}
+<section class="mainServices">
+    <div class="servicePageLinks">
+        <a  href="/">Ana Səhifə</a> /
+        <a class="ppp-second" href="/services">Servislər</a>
+    </div>
+    <div class="mainServicesContent">
+        <h1>
+            Savadlı və sertifikatlı əməkdaşlarımız ilə verilən xidmət keyfiyyəti
+        </h1>
+        <p>
+            Qurğularımız haqqında yüksək dərəcədə hazırlığa və məlumata malik olan
+            professional servis mühəndislərimiz sayəsində, müştəri məmnuniyyəti və
+            qısa zamanda problemlərin həll edilməsi önəmli və birincidir.
+        </p>
+        <a id="servicesBtn" href="/contact">Yardım alın</a>
+    </div>
+</section>
+
+<section class="servicesPageContent">
+    <div class="serviceImage">
+        <img src="assets/img/service.webp" alt="avanqardups-service" />
+    </div>
+
+    <div class="servicesParagraf">
+        <h2>Sürətli Servis və müştəri dəyərinin artırılması</h2>
+        <p>
+            "AVANQARD UPS" MMC quraşdırma, şəbəkəyə bağlanma, satış sonrası
+            yerində servis və baxım işlərində ən geniş servis gücünə sahib olan
+            şirkət olaraq fəaliyyətini davam etdirir. Müştərilərdən gələn hər bir
+            zəng mühəndis heyətimiz tərəfindən operativ araşdırılır, Siz dəyərli
+            müştərilərimizə ən qısa zamanda yardım edilir.
+        </p>
+        <h2>Qısa zamanda ehtiyat hissələri və akkumlyator tədarükü</h2>
+        <p>
+            Qurğularımıza aid ehtiyat hissələri, bütün güclərdə akkumlytorlar hər
+            zaman anbarlarımızda saxlanılmaqdadır. Eyni zamanda ödənişsiz olaraq
+            mühəndislərimiz sizə lazım olan gücü hesablayacaqlar.
+        </p>
+        <h2>Müştəri ehtiyaclarına uyğun müddət və müqavilələr</h2>
+        <p>
+            Seçilə bilən xidmət paketlərinə görə bir çox üstünlüklər Siz dəyərli
+            müştərilərimizə təklif edilməkdədir. Paketlərimiz 5/9 və ya 7/24 saat,
+            ehtiyat hissəli və ya ehtiyat hissəsiz şərtlərinə görə seçilə
+            bilməkdədir.
+        </p>
+    </div>
+</section>
+
+<section class="serviceContact" id="serviceContact">
+    <form  id="serviceContactForm" class="serviceContactContent" >
+        <h2>
+            Texniki problem var?<br />
+            Güc hesablanması lazımdır?
+        </h2>
+        <p>Mail ünvanınızı aşağıya qeyd edin, sizinlə əlaqə saxlayaq</p>
+
+
+        <p>
+            <label for="fname">Adınız:</label><br />
+        <div id="nameResponsed" class="form-response"></div>
+        <input class="serviceInp" type="text" id="fname" name="name"   placeholder="Adınız" />
+        <br />
+        <label for="fname">Mobil:</label><br />
+        <div id="phoneResponsed" class="form-response"></div>
+        <input class="serviceInp" id="number" name="phone" type="tel"
+               placeholder="məs, +994(50) 999 99 99"/><br />
+        <button class="serviceBtn" id="serviceBtn" type="button"  >
+            Göndər
+        </button>
+        <div class="contactFormElementStyle errorOrSuccessMessage"></div>
+    </form>
+    <div class="success-message">Your message has been sent!
+        <svg id="success-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <title>checkbox-checked</title>
+            <rect fill="#2D79CF" x="0" y="0" width="32" height="32"></rect>
+            <path fill="#fff" d="M28 0h-24c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-24c0-2.2-1.8-4-4-4zM14 24.828l-7.414-7.414 2.828-2.828 4.586 4.586 9.586-9.586 2.828 2.828-12.414 12.414z"></path>
+        </svg>
+    </div>
+    <div class="serviceContactImage">
+        <img src="assets/img/services-question.png" alt="avanqardups-question" />
+    </div>
+</section>
+<!--
+<section class="serviceUp">
+  <div class="servicePageIpIcon">
+    <a href="#"><img src="assets/img/arrow-up.svg" alt="" /></a>
+  </div>
+</section> -->
+
+<section class="up">
+    <div class="upIcon">
+        <a href="#"><img src="assets/img/arrow-up.svg" alt="arrow" /></a>
+    </div>
+</section>
+
+{{>footer}}
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/service.js"></script>
+<script type="text/javascript" src="js/pages.js"></script>
+<script src="gsapJs/service-gsap.js"></script>
+</body>
+</html>

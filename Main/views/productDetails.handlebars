@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="AVANQARD UPS sizin üçün ən doğru olan seçimdir.">
+    <meta name="keywords" content="Avanqard UPS, UPS sistemlər avadanlıqlar, defender, avr, ma series">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge 'self' https://avanqardups.az" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet"  href="css/style.css" />
+    <link rel="stylesheet"  href="css/productDetails.css" />
+    <link rel="stylesheet"  href="css/contact.css">
+    <title>Products</title>
+</head>
+<body>
+{{>navbar}}
+
+{{>search}}
+
+<div class="productDetailsPageLinks">
+    <a href="/">Ana Səhifə</a> /
+    <a href="/products">Məhsullar</a> /
+    <a class="ppp-second" href="/productDetails">{{product.Name}}</a>
+</div>
+
+<!-- !product hissəsi buradan başlayır -->
+<section class="productDetails">
+    <div class="productDetailsInfo">
+        <h1>{{product.Name}}</h1>
+        <h2>{{product.Power}}</h2>
+        <h2>{{product.Title}}</h2>
+        <br>
+        {{#each product.Description}}
+            <p>{{this}}</p>
+        {{/each}}
+        <br>
+        {{#each product.ExtraDescription}}
+            <p>{{this}}</p>
+        {{/each}}
+
+
+    </div>
+    <section class="up">
+        <div class="upIcon">
+            <a ><img src="assets/img/arrow-up.svg" alt="arrow" /></a>
+        </div>
+    </section>
+
+    <div class="productDetailsImage">
+        <img src={{product.ImageUrl}} alt="avanqardups-product" />
+    </div>
+</section>
+
+<div class="productSpecification">
+    <p>{{product.SpecificationTitle}}</p>
+</div>
+{{#if product.ExtraImageUrl}}
+    <div class="productExtraImage">
+        <img src={{product.ExtraImageUrl}} alt="avanqardups-product" />
+    </div>
+{{/if}}
+<div class="productTableImage">
+    <img src={{product.TableImageUrl}} alt="avanqardups-product" />
+</div>
+
+<section class="productDetailsButton">
+    <a class="productDetailsBtn" href="/contact">Qiymət təklifi alın</a>
+    <a class="btnSecond productBtnSecond prdMT" href="assets/avanqard-katalogs/{{pdfName}}.pdf" download={{pdfName}}>Kataloqu yükləyin</a>
+</section>
+
+
+<!-- !product hissəsi burada bitir -->
+
+{{>footer}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+todo list nav-bar search 
+nav bar box shadow 
+butun sekiller resize olmalidir
+icon backgroundcolor
+
+
+//

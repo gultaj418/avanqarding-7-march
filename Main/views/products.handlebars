@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="AVANQARD UPS sizin üçün ən doğru olan seçimdir.">
+    <meta name="keywords" content="Avanqard UPS, UPS sistemlər avadanlıqlar, defender, avr, ma series">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge 'self' https://avanqardups.az" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <title>Məhsullar</title>
+</head>
+<body>
+{{>navbar}}
+
+{{>search}}
+<section class="up">
+    <div class="upIcon">
+        <a><img src="assets/img/arrow-up.svg" alt="arrow" /></a>
+    </div>
+</section>
+
+<section class="productPage">
+    <div class="productPageHeading">
+        <div class="productPageLinks">
+            <a class="ppp" href="/">Ana Səhifə</a> /
+            <a class="ppp ppp-second" href="/products">Məhsullar</a>
+        </div>
+        <h1>Məhsullarımız</h1>
+    </div>
+
+
+    <section class="productCard">
+        <div class="loader"></div>
+        <div class="productFlex">
+        </div>
+        {{!-- <div class="button">
+            <a class="btn productBtn" href="/products">Məhsullara baxın</a>
+            <a class="btnSecond productBtnSecond" href="assets/katalogs/katalog.pdf" download="Upset katalog">Kataloqu Endirin </a>
+        </div> --}}
+    </section>
+</section>
+
+<div class="ProductDownloadButton">
+    <button class="dwnld-btn" href="assets/katalogs/katalog.pdf" download="Upset katalog">Məhsul jurnalını endir - pdf</button>
+</div>
+
+<!-- <section class="upsCalculator">
+        <div class="upsCalculatorInfo">
+            <h2>"UPS" güc hesablama</h2>
+            <p>Sizin üçün lazım olan düzgün UPS gücünü, cihazların sayını daxil edərək hesablayın və yaxud servis əməkdaşlarımızdan yardım alın.</p>
+            <a href="#"><img src="assets/img/calculator.svg" alt="">Hesabla</a>
+        </div>
+
+        <div class="upsCalculatorImage">
+            <img src="assets/img/battery svg.png" alt="">
+        </div>
+    </section> -->
+
+
+
+{{>footer}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/pages.js"></script>
+<script src="gsapJs/product-gsap.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1028.527" height="1376.289" viewBox="0 0 1028.527 1376.289">
+  <defs>
+  <!-- x1="1.264" y1="0.117" x2="-0.877" y2="2.005" -->
+    <linearGradient id="linear-gradient" x1="0" y1="0%" x2="0" y2="100%" gradientUnits="objectBoundingBox">
+      <stop  stop-color="#1e2a4d">
+        <animate
+          dur="3s"
+          attributeName="offset"
+          fill="freeze"
+          from="0.1"
+          to="0.3"
+          repeatCount="indefinite"
+        ></animate>
+      </stop>
+
+      <stop  stop-color="#475F80">
+        <animate
+          dur="3s"
+          attributeName="offset"
+          fill="freeze"
+          from="0.3"
+          to="0.8"
+          repeatCount="indefinite"
+        ></animate>
+      </stop>
+    </linearGradient>
+  </defs>
+  <path id="line-large" d="M1167.14,1376.289h136.371L2195.667,0H2059.3Z" transform="translate(-1167.141)" fill="url(#linear-gradient)"/>
+</svg>

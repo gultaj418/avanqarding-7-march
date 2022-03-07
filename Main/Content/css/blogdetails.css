@@ -1,0 +1,140 @@
+main {
+  background-color: var(--white-text);
+  padding: 0;
+  display: block;
+  height: auto;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+section.bread-crumbs-title {
+  width: 90%;
+  /* margin-left: auto; */
+  margin-top: 3rem;
+  padding: 0 5%;
+}
+
+.bread-crumbs {
+  margin-bottom: 3rem;
+  color: var(--main-black);
+  font-size: 18px;
+}
+.bread-crumbs a {
+  color: var(--main-black);
+  font-family: "Montserrat", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+}
+.bread-crumbs a:hover {
+  text-decoration: underline;
+}
+.main .title {
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.main .date {
+  color: var(--text-color);
+}
+
+.main .image-wrapper {
+  width: 90%;
+  /* margin: 3rem auto; */
+  padding: 3rem 5%;
+}
+.image-wrapper img {
+  width: 100%;
+}
+article {
+  color: var(--text-color);
+  width: 43%;
+  text-align: left;
+  font-size: 20px;
+  margin: 0rem auto;
+  z-index: 999;
+  letter-spacing: 2px;
+  /* line-height: 21px; */
+  line-height: 150%;
+}
+.br {
+  height: 30px;
+  width: 100%;
+  display: block;
+}
+article .description-head {
+  font-size: 31px;
+  color: var(--main-black);
+  margin: 30px 0;
+  font-weight: bold;
+}
+article u {
+  color: var(--main-black);
+}
+.main .more-info {
+  /* margin: 0 443px; */
+  width: 52%;
+  margin: 0 auto;
+  color: var(--main-black);
+  line-height: 150%;
+  font-weight: bold;
+  font-size: 31px;
+}
+.main .moreinfo-link {
+  /* padding: 0rem 3rem; */
+  width: 160px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+
+  padding: 0.8% 1%;
+  border-radius: 4px;
+  margin: 4rem auto 10rem;
+  cursor: pointer;
+  background-color: var(--main-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.moreinfo-link:hover{
+transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 900px){
+  article{
+    width: 90%;
+    padding: 0 5%;
+  }
+  main .more-info{
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  article {
+    font-size: 16px;
+    /* width: 70%; */
+  }
+  .main .title {
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  article .description-head {
+    font-size: 20px;
+  }
+  .main .more-info {
+    font-size: 17px;
+    /* width: 70%; */
+  }
+  .main .moreinfo-link {
+    width: 220px;
+    height: 50px;
+  }
+}
+.ppp-second {
+  color: #6d6e69 !important;
+  font-weight: bold;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="AVANQARD UPS sizin üçün ən doğru olan seçimdir.">
+    <meta name="keywords" content="Avanqard UPS, UPS sistemlər, avadanlıq, əlaqə">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge 'self' https://avanqardups.az" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+{{>navbar}}
+{{>search}}
+
+<!--    <div class="modal-bg">-->
+<!--      <div class="modal">-->
+<!--        <div class="modal-wrapper">-->
+<!--          <div class="modal-logo">-->
+<!--            <img src="assets/img/avanqardups-logo-dark.svg" />-->
+<!--          </div>-->
+<!--          <div class="modal-close"></div>-->
+<!--        </div>-->
+<!--        <div class="modal-input-wrapper">-->
+<!--          &lt;!&ndash; <textarea  placeholder="Axtaris Edin..." class="modal-input"></textarea> &ndash;&gt;-->
+
+<!--          <input type="text" placeholder="Axtaris edin" class="modal-input" />-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<section class="contactPageInfo">
+    <div class="contactPageHeading">
+        <div class="contactPageLinks">
+            <a class="ppp" href="/">Ana Səhifə</a> /
+            <a class="ppp ppp-second" href="/contact">Əlaqə</a>
+        </div>
+    </div>
+
+    <div class="contactPageCard">
+        <div class="contactPageCardInfo">
+            <img src="assets/img/phone-contact.svg" alt="avanqardups-call" />
+            <h2>Əlaqə nömrələri</h2>
+            <p >
+                <a href="tel: +994 12 404 53 08">&nbsp +994 12 404 53 08 &nbsp</a>
+                <br>
+                <a href="tel: +994 50 310 77 16 ">&nbsp +994 12 310 77 16 &nbsp</a>
+                <br>
+                <a href="tel: +994 50 427 26 16 ">&nbsp +994 50 427 26 16 &nbsp</a>
+            </p>
+        </div>
+        <div class="contactPageCardInfo">
+            <img src="assets/img/loc-contact.svg" alt="avanqardups-location" />
+            <h2>Ofis ünvanımız</h2>
+            <a href="https://goo.gl/maps/cfLLMwiRtW5sL83q7" target="_blank">
+                Ağ şəhər Y/M, 1-ci Yaşıl ada küçəsi, bina 7, mənzil 12</a>
+        </div>
+        <div class="contactPageCardInfo">
+            <img src="assets/img/mail-contact.svg" alt="avanqardups-email" />
+            <h2>E-mail ünvanımız</h2>
+            <a href="mailto:office@aitms.net"> office@aitms.net </a>
+        </div>
+    </div>
+</section>
+
+
+
+<section  class="contactUs" id="contactIndex">
+    <div class="contactUsFlex">
+        <form class="contactUsInfo"  id="contactUs" >
+            <h1>Bizimlə əlaqə saxlayın</h1>
+
+
+
+
+
+            <p>
+                Aşağıdakı əlaqə formunu dolduraraq suallarınızı, təklif və
+                iradlarınızı bildirə bilərsiniz
+            </p>
+            <div class="formContactContain">
+                <div class="smth">
+                    <label for="fname">Adınız:</label>
+                    <div id="nameResponsed" class="form-response"></div>
+
+
+                    <input
+                            class="contactFormElementStyle"
+                            type="text"
+                            id="fname"
+                            name="name"
+                            placeholder="Adınız"
+                    />
+
+                </div>
+
+                <div class="smth">
+                    <label for="email">Mail ünvanınız:</label>
+                    <div id="emailResponsed" class="form-response"></div>
+                    <input
+                            class="contactFormElementStyle"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="məs, adınız@shirketiniz.com"
+                    />
+                </div>
+                <div class="smth">
+                    <label for="phone">Telefon nömrəniz:</label>
+                    <div id="phoneResponsed" class="form-response"></div>
+                    <input
+                            class="contactFormElementStyle"
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="məs, +99412 345 67 89"
+                    />
+                </div>
+
+                <div class="smth">
+                    <label for="companyName">Şirkət adı:</label>
+                    <div id="companyNameResponsed" class="form-response"></div>
+                    <input
+                            class="contactFormElementStyle"
+                            type="text"
+                            id="companyName"
+                            name="companyName"
+                            placeholder="Sizin şirkət"
+                    />
+                </div>
+
+                <div class="smth">
+                    <label for="movzu">Mövzu</label>
+
+                    <select name="subject" id="movzu">
+                        <option value="Məhsullar haqqında">Məhsullar haqqında</option>
+                        <option value="Qiymət haqqında">Qiymət haqqında</option>
+                        <option value="Müqavilə haqqında">Müqavilə haqqında</option>
+                        <option value="Digər">Digər</option>
+                    </select>
+
+                </div>
+
+                <div class="smth">
+                    <label for="message">Mesajınız:</label>
+                    <div id="messageResponsed" class="form-response"></div>
+                    <input
+                            class="contactFormElementStyle"
+                            type="text"
+                            id="message"
+                            name="message"
+                            placeholder="Mesajınız"
+                    />
+                    <br />
+                    <button class="contactBtn" id="contactBtn" type="button">
+                        Göndər
+                    </button>
+
+                </div>
+
+
+
+
+            </div>
+
+        </form>
+        <div class="success-message">Your message has been sent!
+            <svg id="success-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <title>checkbox-checked</title>
+                <rect fill="#2D79CF" x="0" y="0" width="32" height="32"></rect>
+                <path fill="#fff" d="M28 0h-24c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-24c0-2.2-1.8-4-4-4zM14 24.828l-7.414-7.414 2.828-2.828 4.586 4.586 9.586-9.586 2.828 2.828-12.414 12.414z"></path>
+            </svg>
+        </div>
+        <div class="contactUsImage">
+            <img src="assets/img/contact-image.svg" alt="avanqardups-contact" />
+        </div>
+    </div>
+</section>
+
+<!-- <div class="upIcon">
+<a href="#"><img src="assets/img/arrow-up.svg" alt=""></a>
+</div> -->
+
+<!-- <section class="contactUp">
+  <div class="contactPageIpIcon">
+    <a href="#"><img src="assets/img/arrow-up.svg" alt="" /></a>
+  </div>
+</section> -->
+
+<section class="up">
+    <div class="upIcon">
+        <a href="#"><img src="assets/img/arrow-up.svg" alt="arrow" /></a>
+    </div>
+</section>
+
+{{>footer}}
+
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+{{!-- <script type="text/javascript" src="js/pages.js"></script> --}}
+<script src="gsapJs/contact-gsap.js"></script>
+</body>
+</html>
