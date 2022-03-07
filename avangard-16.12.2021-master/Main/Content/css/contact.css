@@ -198,7 +198,7 @@ input:focus {
   color: var(--main-black);
   border: none;
   border-radius: 2px;
-  /* font-size: var(--font-16px); */
+  font-size: var(--font-16px);
   transition: all 0.2s;
 }
 .contactUsInfo button:hover {
