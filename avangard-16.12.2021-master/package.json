@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "live-server": "^1.2.1",
+    "sharp": "^0.29.3",
+    "swagger-ui-express": "^4.3.0"
+  }
+}
