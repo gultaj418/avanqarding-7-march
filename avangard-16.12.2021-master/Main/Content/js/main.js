@@ -1,11 +1,11 @@
-const hamburger = document.querySelector(".navbarSection nav .hamburger");
-const navlinks = document.querySelector(".mobile-ul");
-const links = document.querySelector(".mobile-ul li");
-const hamburgerLine = document.querySelector(".line");
-const upIcon = document.querySelector(".up");
+let hamburger = document.querySelector(".navbarSection nav .hamburger");
+let navlinks = document.querySelector(".mobile-ul");
+let links = document.querySelector(".mobile-ul li");
+let hamburgerLine = document.querySelector(".line");
+let upIcon = document.querySelector(".up");
 let loader = document.querySelector(".loader");
 
-const url = "https://avanqardups.az";
+let url = "https://avanqardups.az";
 
 hamburger.addEventListener("click", () => {
   hamburgerLine.classList.toggle("lineActive");
@@ -21,22 +21,22 @@ upIcon.addEventListener("click", () => {
 });
 
 // Service dropdown
-const serviceButton = document.querySelector(
+let serviceButton = document.querySelector(
   ".navbarSection nav .serviceTopMenu"
 );
 let serviceMenuList = document.querySelector(".serviceMenu");
-const serviceArrow = document.querySelector(".arrow");
+let serviceArrow = document.querySelector(".arrow");
 
 serviceButton.addEventListener("click", function () {
   serviceMenuList.classList.toggle("openServiceMenu");
   serviceArrow.classList.toggle("arrow-up");
 });
 
-const mobileServiceBtn = document.querySelector(".mobile-ul .serviceTopMenu");
-const serviceUl = document.querySelector(".mobileServiceUl");
-const mobArrow = document.querySelector(".mob-arrow");
+let mobileServiceBtn = document.querySelector(".mobile-ul .serviceTopMenu");
+let serviceUl = document.querySelector(".mobileServiceUl");
+let mobArrow = document.querySelector(".mob-arrow");
 
-// const serviceArrowMobile = document.querySelector(
+// let serviceArrowMobile = document.querySelector(
 //   ".mobile-ul .serviceTopMenu .serviceArrowDown"
 // );
 
@@ -122,7 +122,7 @@ window.addEventListener("scroll", function () {
 });
 
 //regex
-const inputv = document.querySelector(".modal-input");
+let inputv = document.querySelector(".modal-input");
 let container = document.querySelector(".table-data tbody");
 
 let letters = /^[A-Za-z]+$/;
@@ -176,68 +176,6 @@ inputv.addEventListener("keyup", (e) => {
   };
   xhr.send();
 });
-
-const prev_handler = window.onload;
-window.onload = function () {
-  if (prev_handler) {
-    prev_handler();
-  }
-  const productFlex = document.querySelector(".productCard  .productFlex");
-  const xhr = new XMLHttpRequest();
-
-  if (window.location.href === `${url}/products`) {
-    xhr.open("GET", `${url}/product/all`);
-  } else {
-    xhr.open("GET", `${url}/product/main`);
-  }
-  xhr.onreadystatechange = function () {
-    if (this.readyState === 3) {
-    } else if (this.status === 200 && this.readyState === 4) {
-      // loader.classList.remove('active')
-      if (loader) {
-        loader.classList.add("active");
-      }
-
-      const response = JSON.parse(this.responseText);
-      response.map(function (element) {
-        const detailsName = element.Name.split(" ").join("_");
-        let detailsUrl = "";
-        if (window.location.href === `${url}/products`) {
-          detailsUrl = `${url}/product?productName=${detailsName}`;
-        } else {
-          detailsUrl = `${url}/products`;
-        }
-
-        productFlex.innerHTML += `
-        <div class="productInfo">
-            <div class="productImageWrapper">
-            <img src=${element.ImageUrl}>
-            </div>
-            <hr class="productHr">
-            <div class="productHeadd">
-            <h3>${element.Name}</h3>
-            <p class="powerDescription">${element.Power}</p>
-            </div>
-            <hr class="productHr">
-            <div class="productDesc">
-            <p>${element.Title}</p>
-            </div>
-            <hr class="productHr">
-            <div class="prdct-btn">
-            <a id="daha-etrafli"  href=${detailsUrl}>Daha ətraflı <img id="productRightArrow" src="assets/img/right-arrow.svg" alt=""></a>
-            </div>
-           
-        </div>
-        
-    </div>
-    `;
-      });
-    } else {
-      // console.log("error occured");
-    }
-  };
-  xhr.send();
-};
 
 const desc = document.querySelectorAll(".productDetailsInfo p");
 

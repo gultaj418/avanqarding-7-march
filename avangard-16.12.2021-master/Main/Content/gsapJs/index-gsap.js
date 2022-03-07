@@ -1,4 +1,3 @@
-
 // gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline();
 tl.from("#mainContentPart div, #mainContentPart p, #mainContentPart h1", 1, {
@@ -140,36 +139,6 @@ gsap.from(".info", 0.7, {
   scale: 0.7,
   scrollTrigger: {
     trigger: ".map",
-  },
-});
-
-gsap.from(".productHeading", 0.7, {
-  opacity: 0,
-  stagger: {
-    each: 0.2,
-    from: "top",
-  },
-  x: -20,
-  scale: 0.7,
-  scrollTrigger: {
-    trigger: ".productCard",
-    start: "200 bottom",
-  },
-});
-
-gsap.from(".productInfo", 0.7, {
-  opacity: 0,
-  stagger: {
-    each: 0.2,
-    from: "top",
-  },
-  y: 200,
-  scale: 0.7,
-  scrollTrigger: {
-    trigger: ".productCard",
-    toggleActions: "play none none none",
-
-    start: "top center",
   },
 });
 

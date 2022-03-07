@@ -99,7 +99,7 @@ nav ul li a:hover,
   -o-border-radius: 8px;
 }
 
-.contactPageCardInfo a{
+.contactPageCardInfo a {
   color: black;
 }
 /* .contactPageCardInfo:hover {
@@ -201,7 +201,7 @@ input:focus {
   /* font-size: var(--font-16px); */
   transition: all 0.2s;
 }
-.contactUsInfo button:hover{
+.contactUsInfo button:hover {
   transform: scale(1.05);
 }
 
@@ -549,8 +549,11 @@ select:focus {
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+  }
+  .contactPageCardInfo a {
+    font-size: 15px;
   }
   .contactUsFlex {
     width: 80%;

@@ -1,11 +1,11 @@
 // Fixed Nav
-let nav = document.getElementsByClassName("navbarSection")[0];
-let x = window.matchMedia("(max-width: 1150px)");
-let mobileUl = document.querySelector(".mobile-ul");
+nav = document.getElementsByClassName("navbarSection")[0];
+x = window.matchMedia("(max-width: 1150px)");
+mobileUl = document.querySelector(".mobile-ul");
 
-let headerContainer = document.querySelector("#headerContainer");
-let headerHeight = headerContainer.offsetHeight;
-let serviceMenuList = document.querySelector(".serviceMenu");
+headerContainer = document.querySelector("#headerContainer");
+headerHeight = headerContainer.offsetHeight;
+serviceMenuList = document.querySelector(".serviceMenu");
 
 window.addEventListener("scroll", function () {
   mobileUl.classList.add("openWhileFixed");
